@@ -1,4 +1,6 @@
 # Single-Day Recharge Propensity Model
+<img width="1536" height="1024" alt="0f02dcf8-894f-4bd8-8b0b-2527631d8eff" src="https://github.com/user-attachments/assets/d13f5e84-39d6-4af3-a472-bee3769d459a" />
+
 
 ## Overview
 
