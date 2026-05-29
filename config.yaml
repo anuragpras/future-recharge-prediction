@@ -1,0 +1,25 @@
+project:
+  name: single-day-recharge-propensity-model
+  description: Predict future recharge propensity for users who recharged on a selected single cohort day.
+
+paths:
+  train_file: data/sample_train_single_day_rechargers.csv
+  predict_file: data/sample_predict_single_day_rechargers.csv
+  output_dir: outputs
+  model_dir: models
+
+columns:
+  user_id: user_id
+  target: future_recharged
+  cohort_date: cohort_recharge_date
+
+model:
+  test_size: 0.2
+  random_state: 42
+  top_percent_export: 10
+  score_buckets:
+    - [0.80, 1.00]
+    - [0.60, 0.80]
+    - [0.40, 0.60]
+    - [0.20, 0.40]
+    - [0.00, 0.20]
